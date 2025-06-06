@@ -1,0 +1,355 @@
+{
+  "dateTimeGenerated": "2025-06-06T01:40:49.872Z",
+  "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": false,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 3
+    },
+    "lockCoreConfig": true,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 2,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    "3": {
+      "pinNumber": 8,
+      "ledNumber": 3,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 2
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Previous Page",
+                  "action": "longPress"
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Next Page",
+                  "action": "longPress"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "53",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Emulate FS5"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "54",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Emulate FS4"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "68",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Tuner"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        0,
+        0
+      ],
+      "lightBrightness": 50
+    },
+    {
+      "pageNumber": 2,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Snapshot 1"
+                }
+              ],
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 50,
+              "ledGroup": 1,
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "1",
+                  "action": "release",
+                  "notes": "Snapshot 2"
+                }
+              ],
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 50,
+              "ledGroup": 1,
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "2",
+                  "action": "release",
+                  "notes": "Snapshot 3"
+                }
+              ],
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 50,
+              "ledGroup": 1
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        0,
+        255,
+        0
+      ],
+      "lightBrightness": 50
+    },
+    {
+      "pageNumber": 3,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "72",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Previous Preset"
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "72",
+                  "value": "127",
+                  "action": "release",
+                  "notes": "Next Preset"
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": 0,
+                  "value": 127,
+                  "action": "press"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        0,
+        0,
+        255
+      ],
+      "lightBrightness": 50
+    }
+  ],
+  "sequences": {
+    "1": {
+      "name": "Footswitch Modes",
+      "steps": [
+        {
+          "command": {
+            "midiChannel": 1,
+            "commandClass": "Control Change",
+            "number": "71",
+            "value": "0",
+            "rampRateMs": 1000,
+            "action": "press"
+          },
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": true,
+          "lightRGB": [
+            240,
+            232,
+            0
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "notes": "Stomp footswitch mode"
+        },
+        {
+          "command": {
+            "midiChannel": 1,
+            "commandClass": "Control Change",
+            "number": "71",
+            "value": "2",
+            "rampRateMs": 1000,
+            "action": "press"
+          },
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": true,
+          "lightRGB": [
+            250,
+            0,
+            146
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "notes": "Preset footswitch mode"
+        }
+      ]
+    }
+  }
+}
