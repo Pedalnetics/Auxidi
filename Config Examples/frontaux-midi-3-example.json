@@ -1,6 +1,5 @@
 {
-  "dateTimeGenerated": "2025-06-06T02:23:18.842Z",
-  "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes",
+  "dateTimeGenerated": "2025-06-06T03:19:11.321Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -144,12 +143,19 @@
                   "action": "release",
                   "notes": "Tuner"
                 }
-              ]
+              ],
+              "executeGlobalCommands": false
             }
           }
         }
       },
-      "isGlobal": false
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        0,
+        0
+      ],
+      "lightBrightness": 50
     },
     {
       "pageNumber": 2,
@@ -164,17 +170,17 @@
                   "number": "69",
                   "value": "0",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
                   "notes": "Snapshot 1"
                 }
               ],
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 50,
-              "ledGroup": 1,
               "executeGlobalCommands": true
             }
           }
@@ -189,17 +195,17 @@
                   "number": "69",
                   "value": "1",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
                   "notes": "Snapshot 2"
                 }
               ],
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 50,
-              "ledGroup": 1,
               "executeGlobalCommands": true
             }
           }
@@ -214,22 +220,29 @@
                   "number": "69",
                   "value": "2",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
                   "notes": "Snapshot 3"
                 }
               ],
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 50,
-              "ledGroup": 1
+              "executeGlobalCommands": false
             }
           }
         }
       },
-      "isGlobal": false
+      "isGlobal": false,
+      "lightRGB": [
+        0,
+        42,
+        255
+      ],
+      "lightBrightness": 50
     },
     {
       "pageNumber": 3,
@@ -246,7 +259,8 @@
                   "action": "release",
                   "notes": "Previous Preset"
                 }
-              ]
+              ],
+              "executeGlobalCommands": false
             }
           }
         },
@@ -262,7 +276,8 @@
                   "action": "release",
                   "notes": "Next Preset"
                 }
-              ]
+              ],
+              "executeGlobalCommands": false
             }
           }
         },
@@ -277,12 +292,19 @@
                   "value": 127,
                   "action": "press"
                 }
-              ]
+              ],
+              "executeGlobalCommands": false
             }
           }
         }
       },
-      "isGlobal": false
+      "isGlobal": false,
+      "lightRGB": [
+        4,
+        255,
+        0
+      ],
+      "lightBrightness": 50
     }
   ],
   "sequences": {
@@ -337,5 +359,7 @@
         }
       ]
     }
-  }
+  },
+  "name": "FrontAux 3 MIDI Example",
+  "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes"
 }
