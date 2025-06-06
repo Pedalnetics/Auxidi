@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-06-06T02:15:33.723Z",
+  "dateTimeGenerated": "2025-06-06T02:23:18.842Z",
   "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes",
   "settings": {
     "midiChannel": 1,
@@ -108,7 +108,7 @@
                   "number": "53",
                   "value": "0",
                   "action": "release",
-                  "notes": "Emulate FS5"
+                  "notes": "Emulate FS4"
                 }
               ],
               "executeGlobalCommands": true
@@ -125,7 +125,7 @@
                   "number": "54",
                   "value": "0",
                   "action": "release",
-                  "notes": "Emulate FS4"
+                  "notes": "Emulate FS5"
                 }
               ],
               "executeGlobalCommands": true
@@ -144,19 +144,12 @@
                   "action": "release",
                   "notes": "Tuner"
                 }
-              ],
-              "executeGlobalCommands": false
+              ]
             }
           }
         }
       },
-      "isGlobal": false,
-      "lightRGB": [
-        255,
-        0,
-        0
-      ],
-      "lightBrightness": 50
+      "isGlobal": false
     },
     {
       "pageNumber": 2,
@@ -171,18 +164,9 @@
                   "number": "69",
                   "value": "0",
                   "action": "release",
-                  "useLightControls": true,
-                  "lightRGB": [
-                    255,
-                    255,
-                    255
-                  ],
-                  "lightBrightness": 50,
-                  "ledGroup": 1,
                   "notes": "Snapshot 1"
                 }
               ],
-              "executeGlobalCommands": true,
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -190,7 +174,8 @@
                 255
               ],
               "lightBrightness": 50,
-              "ledGroup": 1
+              "ledGroup": 1,
+              "executeGlobalCommands": true
             }
           }
         },
@@ -204,18 +189,9 @@
                   "number": "69",
                   "value": "1",
                   "action": "release",
-                  "useLightControls": true,
-                  "lightRGB": [
-                    255,
-                    255,
-                    255
-                  ],
-                  "lightBrightness": 50,
-                  "ledGroup": 1,
                   "notes": "Snapshot 2"
                 }
               ],
-              "executeGlobalCommands": true,
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -223,7 +199,8 @@
                 255
               ],
               "lightBrightness": 50,
-              "ledGroup": 1
+              "ledGroup": 1,
+              "executeGlobalCommands": true
             }
           }
         },
@@ -237,18 +214,9 @@
                   "number": "69",
                   "value": "2",
                   "action": "release",
-                  "useLightControls": true,
-                  "lightRGB": [
-                    255,
-                    255,
-                    255
-                  ],
-                  "lightBrightness": 50,
-                  "ledGroup": 1,
                   "notes": "Snapshot 3"
                 }
               ],
-              "executeGlobalCommands": false,
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -261,13 +229,7 @@
           }
         }
       },
-      "isGlobal": false,
-      "lightRGB": [
-        0,
-        255,
-        0
-      ],
-      "lightBrightness": 50
+      "isGlobal": false
     },
     {
       "pageNumber": 3,
@@ -284,8 +246,7 @@
                   "action": "release",
                   "notes": "Previous Preset"
                 }
-              ],
-              "executeGlobalCommands": false
+              ]
             }
           }
         },
@@ -301,8 +262,7 @@
                   "action": "release",
                   "notes": "Next Preset"
                 }
-              ],
-              "executeGlobalCommands": false
+              ]
             }
           }
         },
@@ -317,19 +277,12 @@
                   "value": 127,
                   "action": "press"
                 }
-              ],
-              "executeGlobalCommands": false
+              ]
             }
           }
         }
       },
-      "isGlobal": false,
-      "lightRGB": [
-        0,
-        0,
-        255
-      ],
-      "lightBrightness": 50
+      "isGlobal": false
     }
   ],
   "sequences": {
@@ -337,14 +290,6 @@
       "name": "Footswitch Modes",
       "steps": [
         {
-          "command": {
-            "midiChannel": 1,
-            "commandClass": "Control Change",
-            "number": "71",
-            "value": "0",
-            "rampRateMs": 1000,
-            "action": "press"
-          },
           "screenText": "",
           "useScreenText": false,
           "useLightControls": true,
@@ -355,17 +300,19 @@
           ],
           "lightBrightness": 50,
           "ledGroup": null,
-          "notes": "Stomp footswitch mode"
+          "notes": "Stomp footswitch mode",
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "0",
+              "rampRateMs": 1000,
+              "action": "press"
+            }
+          ]
         },
         {
-          "command": {
-            "midiChannel": 1,
-            "commandClass": "Control Change",
-            "number": "71",
-            "value": "2",
-            "rampRateMs": 1000,
-            "action": "press"
-          },
           "screenText": "",
           "useScreenText": false,
           "useLightControls": true,
@@ -376,7 +323,17 @@
           ],
           "lightBrightness": 50,
           "ledGroup": null,
-          "notes": "Preset footswitch mode"
+          "notes": "Preset footswitch mode",
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "2",
+              "rampRateMs": 1000,
+              "action": "press"
+            }
+          ]
         }
       ]
     }
