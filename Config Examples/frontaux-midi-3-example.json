@@ -108,7 +108,7 @@
                   "number": "53",
                   "value": "0",
                   "action": "release",
-                  "notes": "Emulate FS5"
+                  "notes": "Emulate FS4"
                 }
               ],
               "executeGlobalCommands": true
@@ -125,7 +125,7 @@
                   "number": "54",
                   "value": "0",
                   "action": "release",
-                  "notes": "Emulate FS4"
+                  "notes": "Emulate FS5"
                 }
               ],
               "executeGlobalCommands": true
