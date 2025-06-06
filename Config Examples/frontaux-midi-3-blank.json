@@ -77,5 +77,5 @@
   ],
   "sequences": {},
   "name": "FrontAux MIDI 3 Blank Config",
-  "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes"
+  "description": "A blank slate with all the switches and pins properly set, for you to build your MIDI config ontop of"
 }
