@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-06-07T14:37:17.439Z",
+  "dateTimeGenerated": "2025-06-07T14:43:00.477Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -314,7 +314,8 @@
               "number": "71",
               "value": "0",
               "rampRateMs": 1000,
-              "action": "press"
+              "action": "press",
+              "notes": "Activate Stomp mode for onboard HX footswitches"
             }
           ]
         },
@@ -337,7 +338,8 @@
               "number": "71",
               "value": "2",
               "rampRateMs": 1000,
-              "action": "press"
+              "action": "press",
+              "notes": "Activate Preset mode for onboard HX footswitches"
             }
           ]
         }
