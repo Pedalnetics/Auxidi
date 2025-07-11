@@ -1,0 +1,351 @@
+{
+  "dateTimeGenerated": "2025-06-07T14:43:00.477Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": false,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 3
+    },
+    "lockCoreConfig": true,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 2,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    "3": {
+      "pinNumber": 8,
+      "ledNumber": 3,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 2
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Previous Page",
+                  "action": "longPress",
+                  "notes": "Globally have the first switch Long Press go backwards a page"
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Next Page",
+                  "action": "longPress",
+                  "notes": "Globally have the middle switch Long Press go forwards a page"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "53",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Emulate FS4"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "54",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Emulate FS5"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "68",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Tuner"
+                }
+              ],
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false
+    },
+    {
+      "pageNumber": 2,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "0",
+                  "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
+                  "notes": "Snapshot 1"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "1",
+                  "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
+                  "notes": "Snapshot 2"
+                }
+              ],
+              "executeGlobalCommands": true
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "69",
+                  "value": "2",
+                  "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 50,
+                  "ledGroup": 1,
+                  "notes": "Snapshot 3"
+                }
+              ],
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false
+    },
+    {
+      "pageNumber": 3,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "72",
+                  "value": "0",
+                  "action": "release",
+                  "notes": "Previous Preset"
+                }
+              ],
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "72",
+                  "value": "127",
+                  "action": "release",
+                  "notes": "Next Preset"
+                }
+              ],
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Sequence - Next Step",
+                  "number": "1",
+                  "value": 127,
+                  "action": "press",
+                  "notes": "Step between 2 different footswitch modes as setup in the Sequence"
+                }
+              ],
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false
+    }
+  ],
+  "sequences": {
+    "1": {
+      "name": "Footswitch Modes",
+      "steps": [
+        {
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": true,
+          "lightRGB": [
+            240,
+            232,
+            0
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "notes": "Stomp footswitch mode",
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "0",
+              "rampRateMs": 1000,
+              "action": "press",
+              "notes": "Activate Stomp mode for onboard HX footswitches"
+            }
+          ]
+        },
+        {
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": true,
+          "lightRGB": [
+            250,
+            0,
+            146
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "notes": "Preset footswitch mode",
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "2",
+              "rampRateMs": 1000,
+              "action": "press",
+              "notes": "Activate Preset mode for onboard HX footswitches"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "name": "FrontAux 3 MIDI Example",
+  "description": "An example configuration for the FrontAux MIDI controller, with 3 pages of commands including sequence usage to change footswitch modes"
+}
