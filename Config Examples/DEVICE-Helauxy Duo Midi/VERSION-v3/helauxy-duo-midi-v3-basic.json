@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-07-19T20:43:16.576Z",
+  "dateTimeGenerated": "2025-07-19T20:43:33.294Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -144,6 +144,6 @@
   ],
   "sequences": {},
   "midiChannelDevices": {},
-  "name": "Helauxy Duo MIDI v3 blank",
+  "name": "Helauxy Duo MIDI v3 Basic",
   "description": "This is a blank config for the Helauxy Duo MIDI"
 }
