@@ -1,0 +1,276 @@
+{
+  "dateTimeGenerated": "2025-07-29T22:24:51.745Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": null,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 2
+    },
+    "lockCoreConfig": true,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25,
+    "statusLedColorFormat": "RGB"
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 0,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Sequence - Next Step",
+                  "number": "1",
+                  "value": 127,
+                  "action": "release"
+                },
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "71",
+                  "value": "0",
+                  "action": "longPress",
+                  "notes": "Stomp Mode"
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "commandClass": "Sequence - Next Step",
+                  "number": "2",
+                  "value": 127,
+                  "action": "release",
+                  "notes": "Step through the selected presets"
+                },
+                {
+                  "commandClass": "Sleep",
+                  "number": "250",
+                  "action": "release",
+                  "notes": "Sleep for 250ms"
+                },
+                {
+                  "commandClass": "Sequence - Goto Step# and Execute",
+                  "number": "1",
+                  "value": "1",
+                  "action": "release",
+                  "notes": "Jump to Snapshot 1 and reset the command sequence to recognize it's on Snapshot 1"
+                },
+                {
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "68",
+                  "value": 127,
+                  "action": "longPress",
+                  "notes": "Tuner"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {},
+      "isGlobal": false
+    }
+  ],
+  "sequences": {
+    "1": {
+      "name": "Snapshots",
+      "steps": [
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "69",
+              "value": "0",
+              "rampRateMs": 1000,
+              "notes": "Snapshot 1"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "69",
+              "value": "1",
+              "rampRateMs": 1000,
+              "notes": "Snapshot 2"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "68",
+              "value": "2",
+              "rampRateMs": 1000,
+              "notes": "Snapshot 3"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        }
+      ]
+    },
+    "2": {
+      "name": "Presets",
+      "steps": [
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Program Change",
+              "number": "111",
+              "rampRateMs": 1000,
+              "notes": "Preset 38A"
+            },
+            {
+              "commandClass": "None"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Program Change",
+              "number": "112",
+              "rampRateMs": 1000,
+              "notes": "Preset 38B"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Program Change",
+              "number": "113",
+              "rampRateMs": 1000,
+              "notes": "Preset 38C"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null
+        }
+      ]
+    }
+  },
+  "midiChannelDevices": {
+    "1": "HXStomp"
+  },
+  "name": "12083_JD",
+  "description": "Sample config for JD, order 12083"
+}
