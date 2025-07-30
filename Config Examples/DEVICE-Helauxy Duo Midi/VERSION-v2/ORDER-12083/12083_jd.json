@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-07-29T22:24:51.745Z",
+  "dateTimeGenerated": "2025-07-30T15:13:38.333Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -62,12 +62,14 @@
             "1": {
               "commands": [
                 {
+                  "id": "fea58e45-72a3-4d25-8cfe-6d19c51fd92c",
                   "commandClass": "Sequence - Next Step",
                   "number": "1",
                   "value": 127,
                   "action": "release"
                 },
                 {
+                  "id": "17730c18-6659-4efe-96c8-e6a2846efa0b",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
                   "number": "71",
@@ -75,7 +77,8 @@
                   "action": "longPress",
                   "notes": "Stomp Mode"
                 }
-              ]
+              ],
+              "id": "eed9d58e-4444-4b69-9b21-910e178474e3"
             }
           }
         },
@@ -84,6 +87,7 @@
             "1": {
               "commands": [
                 {
+                  "id": "e5865473-22bb-4e52-9f08-0a6af2d9058b",
                   "commandClass": "Sequence - Next Step",
                   "number": "2",
                   "value": 127,
@@ -91,19 +95,31 @@
                   "notes": "Step through the selected presets"
                 },
                 {
+                  "id": "ba6b4b36-0e69-4d84-8dd9-289510456667",
                   "commandClass": "Sleep",
                   "number": "250",
                   "action": "release",
                   "notes": "Sleep for 250ms"
                 },
                 {
-                  "commandClass": "Sequence - Goto Step# and Execute",
+                  "id": "d9381ae8-6077-476a-94c2-fa0465efc403",
+                  "commandClass": "Sequence - Goto Step# without Execute",
                   "number": "1",
-                  "value": "1",
+                  "value": "3",
                   "action": "release",
                   "notes": "Jump to Snapshot 1 and reset the command sequence to recognize it's on Snapshot 1"
                 },
                 {
+                  "id": "246c8dd7-6a70-40b6-bf10-7df3502dc338",
+                  "commandClass": "Activate Another Switch",
+                  "targetPageNumber": 0,
+                  "targetSwitchId": "1",
+                  "targetStepNumber": 1,
+                  "targetAction": "release",
+                  "action": "release"
+                },
+                {
+                  "id": "0dbf3f09-5239-4170-a351-690e47be2c5b",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
                   "number": "68",
@@ -111,7 +127,16 @@
                   "action": "longPress",
                   "notes": "Tuner"
                 }
-              ]
+              ],
+              "id": "ff779009-4125-4644-90ef-51a60047b2f0",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 50,
+              "ledGroup": null
             }
           }
         }
@@ -136,16 +161,19 @@
               "number": "69",
               "value": "0",
               "rampRateMs": 1000,
-              "notes": "Snapshot 1"
+              "notes": "Snapshot 1",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
           "useScreenText": false,
-          "useLightControls": false,
+          "useLightControls": true,
           "lightRGB": [
             255,
-            255,
-            255
+            0,
+            0
           ],
           "lightBrightness": 50,
           "ledGroup": null
@@ -158,16 +186,19 @@
               "number": "69",
               "value": "1",
               "rampRateMs": 1000,
-              "notes": "Snapshot 2"
+              "notes": "Snapshot 2",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
           "useScreenText": false,
-          "useLightControls": false,
+          "useLightControls": true,
           "lightRGB": [
+            0,
             255,
-            255,
-            255
+            0
           ],
           "lightBrightness": 50,
           "ledGroup": null
@@ -177,18 +208,21 @@
             {
               "midiChannel": 1,
               "commandClass": "Control Change",
-              "number": "68",
+              "number": "69",
               "value": "2",
               "rampRateMs": 1000,
-              "notes": "Snapshot 3"
+              "notes": "Snapshot 3",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
           "useScreenText": false,
-          "useLightControls": false,
+          "useLightControls": true,
           "lightRGB": [
-            255,
-            255,
+            0,
+            0,
             255
           ],
           "lightBrightness": 50,
@@ -206,10 +240,16 @@
               "commandClass": "Program Change",
               "number": "111",
               "rampRateMs": 1000,
-              "notes": "Preset 38A"
+              "notes": "Preset 38A",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             },
             {
-              "commandClass": "None"
+              "commandClass": "None",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
@@ -230,7 +270,10 @@
               "commandClass": "Program Change",
               "number": "112",
               "rampRateMs": 1000,
-              "notes": "Preset 38B"
+              "notes": "Preset 38B",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
@@ -251,7 +294,10 @@
               "commandClass": "Program Change",
               "number": "113",
               "rampRateMs": 1000,
-              "notes": "Preset 38C"
+              "notes": "Preset 38C",
+              "useLightControls": false,
+              "useScreenText": false,
+              "useRepeater": false
             }
           ],
           "screenText": "",
