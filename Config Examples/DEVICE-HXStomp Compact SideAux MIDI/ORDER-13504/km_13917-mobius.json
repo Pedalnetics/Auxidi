@@ -1,0 +1,211 @@
+{
+  "dateTimeGenerated": "2025-09-20T23:50:06.210Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 2,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 2
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "preload",
+    "previewLedBrightness": 25,
+    "statusLedColorFormat": "GRB",
+    "isSimpleMode": false
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 0,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {},
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "4efadf07-714a-45f1-b178-6dc962b34aa1",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "walkerDirection": "Next",
+                  "activatePreset": true,
+                  "action": "release",
+                  "notes": "Preset Up"
+                },
+                {
+                  "id": "245ea4b3-bc0a-454f-973e-bddc231b978e",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "walkerDirection": "Next",
+                  "activatePreset": true,
+                  "action": "longPress",
+                  "notes": "Preset Up Scrolling"
+                }
+              ],
+              "id": "2967f417-43c3-4ffc-93c3-b4bb4a716815",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                255,
+                0
+              ],
+              "lightBrightness": 25,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "0febe8ae-72cb-440e-9398-89fe7ca4f18a",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "walkerDirection": "Previous",
+                  "activatePreset": true,
+                  "action": "release",
+                  "notes": "Preset Down"
+                },
+                {
+                  "id": "7dd866f1-6ca8-4633-b99a-e6384122e71a",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "walkerDirection": "Previous",
+                  "activatePreset": true,
+                  "action": "longPress",
+                  "notes": "Preset Down Scrolling"
+                }
+              ],
+              "id": "fad1610e-7d88-4a2d-8960-ad7e7db5399e",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                0,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        0,
+        0
+      ],
+      "lightBrightness": 25
+    }
+  ],
+  "sequences": {},
+  "pcWalkerSequences": {
+    "1": {
+      "name": "Mobius",
+      "entries": [
+        {
+          "pcNumber": 0,
+          "pcText": "PC0"
+        },
+        {
+          "pcNumber": 1,
+          "pcText": "PC1"
+        },
+        {
+          "pcNumber": 2,
+          "pcText": "PC2"
+        },
+        {
+          "pcNumber": 3,
+          "pcText": "PC3"
+        },
+        {
+          "pcNumber": 4,
+          "pcText": "PC4"
+        },
+        {
+          "pcNumber": 5,
+          "pcText": "PC5"
+        },
+        {
+          "pcNumber": 6,
+          "pcText": "PC6"
+        },
+        {
+          "pcNumber": 7,
+          "pcText": "PC7"
+        },
+        {
+          "pcNumber": 8,
+          "pcText": "PC8"
+        },
+        {
+          "pcNumber": 9,
+          "pcText": "PC9"
+        }
+      ]
+    }
+  },
+  "midiChannelDevices": {
+    "1": "Mobius"
+  },
+  "name": "km_13917-mobius",
+  "description": "Preset banking for the Strymon Mobius"
+}
