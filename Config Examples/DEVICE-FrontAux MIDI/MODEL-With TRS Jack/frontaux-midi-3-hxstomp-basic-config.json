@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-08-22T03:15:18.533Z",
+  "dateTimeGenerated": "2025-10-12T21:02:36.164Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -107,6 +107,14 @@
                   "number": "69",
                   "value": "0",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 100,
+                  "ledGroup": 1,
                   "notes": "Snapshot 1"
                 },
                 {
@@ -122,15 +130,8 @@
                   "notes": "Preset Scroll Down"
                 }
               ],
-              "id": "b8af1cb9-8798-4fbf-bd1e-71a91c5f0242",
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 20,
-              "ledGroup": 1
+              "id": "ba218422-fb09-4b2d-864a-7845c0f7fcc8",
+              "executeGlobalCommands": false
             }
           }
         },
@@ -145,6 +146,14 @@
                   "number": "69",
                   "value": "1",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 100,
+                  "ledGroup": 1,
                   "notes": "Snapshot 2"
                 },
                 {
@@ -157,15 +166,8 @@
                   "notes": "Preset Scroll Up"
                 }
               ],
-              "id": "f094d773-f9d4-4e3f-9661-a8e4eeb66724",
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 20,
-              "ledGroup": 1
+              "id": "b89c4288-876f-490e-a345-a6636c8f000a",
+              "executeGlobalCommands": false
             }
           }
         },
@@ -180,6 +182,14 @@
                   "number": "69",
                   "value": "2",
                   "action": "release",
+                  "useLightControls": true,
+                  "lightRGB": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "lightBrightness": 100,
+                  "ledGroup": 1,
                   "notes": "Snapshot 3"
                 },
                 {
@@ -192,15 +202,8 @@
                   "notes": "Tuner"
                 }
               ],
-              "id": "e79c1c5e-0918-4dae-a8ef-72d22415b800",
-              "useLightControls": true,
-              "lightRGB": [
-                255,
-                255,
-                255
-              ],
-              "lightBrightness": 20,
-              "ledGroup": 1
+              "id": "a908868d-edf0-429d-89ca-ddd9605d3852",
+              "executeGlobalCommands": false
             }
           }
         },
@@ -218,7 +221,8 @@
                   "notes": "FS4"
                 }
               ],
-              "id": "bcc6bf01-f6ae-4b6d-8a2f-81adef6b26cb"
+              "id": "ad6b328a-335f-494b-a20f-45017d2c255d",
+              "executeGlobalCommands": false
             }
           }
         },
@@ -236,7 +240,8 @@
                   "notes": "FS5"
                 }
               ],
-              "id": "d3535dcf-e589-4bc8-8f2e-19e2bca254af"
+              "id": "da5fb4a5-7bc0-4d77-b9f1-8bde3c46153b",
+              "executeGlobalCommands": false
             }
           }
         }
