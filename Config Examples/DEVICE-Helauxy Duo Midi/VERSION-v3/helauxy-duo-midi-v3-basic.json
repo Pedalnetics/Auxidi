@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2025-07-19T20:43:33.294Z",
+  "dateTimeGenerated": "2025-11-10T02:36:23.756Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -23,11 +23,12 @@
       "rows": 1,
       "cols": 2
     },
-    "lockCoreConfig": false,
+    "lockCoreConfig": true,
     "serialDebug": false,
     "screenLedBehavior": "postloadwithpreview",
     "previewLedBrightness": 25,
-    "statusLedColorFormat": "RGB"
+    "statusLedColorFormat": "RGB",
+    "isSimpleMode": false
   },
   "switches": {
     "1": {
@@ -67,6 +68,7 @@
             "1": {
               "commands": [
                 {
+                  "id": "fc328d8f-ae46-4721-aa73-102cb0088230",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
                   "number": "52",
@@ -75,6 +77,7 @@
                   "notes": "FS4"
                 },
                 {
+                  "id": "f7bfa540-ee88-4beb-a2d9-053687450375",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
                   "number": "72",
@@ -86,6 +89,7 @@
                   "notes": "Previous Preset Scroll"
                 }
               ],
+              "id": "b4569b23-6bb3-4460-b684-66be9a3bb949",
               "useLightControls": true,
               "lightRGB": [
                 0,
@@ -93,7 +97,8 @@
                 0
               ],
               "lightBrightness": 25,
-              "ledGroup": null
+              "ledGroup": null,
+              "executeGlobalCommands": false
             }
           }
         },
@@ -102,6 +107,7 @@
             "1": {
               "commands": [
                 {
+                  "id": "69ada644-520a-4d04-8068-33d4ff75ee9d",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
                   "number": "53",
@@ -110,9 +116,10 @@
                   "notes": "FS5"
                 },
                 {
+                  "id": "cab0d2da-e2e8-4116-972b-0573960a4518",
                   "midiChannel": 1,
                   "commandClass": "Control Change",
-                  "number": 0,
+                  "number": "72",
                   "value": 127,
                   "useRepeater": true,
                   "repeaterStartDelayMs": 1000,
@@ -121,6 +128,7 @@
                   "notes": "Next Preset Scroll"
                 }
               ],
+              "id": "2ed29958-7372-4526-8988-89f74d066617",
               "useLightControls": true,
               "lightRGB": [
                 0,
@@ -128,7 +136,33 @@
                 255
               ],
               "lightBrightness": 25,
-              "ledGroup": null
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "VirtSW1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "5a2e50c0-26fe-42fd-bb39-852490ed70c1",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "68",
+                  "value": 127,
+                  "action": "release",
+                  "notes": "Tuner"
+                },
+                {
+                  "id": "7df96005-de2c-49b8-9c11-019c86218ab1",
+                  "commandClass": "Sequence - Next Step",
+                  "number": "1",
+                  "value": 127,
+                  "action": "longPress"
+                }
+              ],
+              "id": "9f041a3c-4a54-46c9-94cb-00b07c1a3539"
             }
           }
         }
@@ -142,8 +176,73 @@
       "lightBrightness": 25
     }
   ],
-  "sequences": {},
-  "midiChannelDevices": {},
+  "sequences": {
+    "1": {
+      "name": "Stomp Snap Seq",
+      "steps": [
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "0",
+              "rampRateMs": 1000,
+              "id": "a0759d14-c7f2-48a6-a30a-c9f6dcf642bd",
+              "notes": "Stomp Mode"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "id": "cf560a10-d1bb-4a26-992a-1fcb8ccc4043"
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "71",
+              "value": "3",
+              "rampRateMs": 1000,
+              "id": "35fa562e-6ada-440c-bd2c-d80b920f7e94",
+              "notes": "Snapshot Mode"
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "id": "52d7b6c5-d594-4a10-9a61-221d6e91c184"
+        }
+      ]
+    }
+  },
+  "pcWalkerSequences": {},
+  "midiChannelDevices": {
+    "1": "HXStomp"
+  },
+  "virtualSwitches": {
+    "VirtSW1": {
+      "switch1Id": "1",
+      "switch2Id": "2",
+      "name": "Sw1 + Sw2 Press",
+      "doublePressVarianceMs": 300
+    }
+  },
   "name": "Helauxy Duo MIDI v3 Basic",
   "description": "This is a blank config for the Helauxy Duo MIDI"
 }
