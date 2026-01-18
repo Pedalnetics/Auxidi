@@ -1,0 +1,175 @@
+{
+  "dateTimeGenerated": "2026-01-18T00:47:22.120Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 2
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "preload",
+    "previewLedBrightness": 25,
+    "statusLedColorFormat": "GRB",
+    "isSimpleMode": false
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "ledColorFormat": "GRB"
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {},
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "fc328d8f-ae46-4721-aa73-102cb0088230",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "46",
+                  "value": "64",
+                  "action": "release",
+                  "notes": "Open Gig View"
+                },
+                {
+                  "id": "f7bfa540-ee88-4beb-a2d9-053687450375",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "46",
+                  "value": "0",
+                  "action": "longPress",
+                  "notes": "Close Gig View"
+                }
+              ],
+              "id": "b8e6d64a-518f-444f-a4f4-5870470c8b68",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                255,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "69ada644-520a-4d04-8068-33d4ff75ee9d",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change",
+                  "number": "2",
+                  "action": "release"
+                },
+                {
+                  "id": "cab0d2da-e2e8-4116-972b-0573960a4518",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "2",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "3e9cfad2-bc43-43ee-af39-52f33446b813",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                0,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "VirtSW1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "5a2e50c0-26fe-42fd-bb39-852490ed70c1",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change",
+                  "number": "3",
+                  "action": "release"
+                },
+                {
+                  "id": "7df96005-de2c-49b8-9c11-019c86218ab1",
+                  "commandClass": "Control Change",
+                  "number": "3",
+                  "value": "0",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "7c400e8e-b753-43da-9396-0c61cd941c30",
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        0,
+        0
+      ],
+      "lightBrightness": 10
+    }
+  ],
+  "sequences": {},
+  "pcWalkerSequences": {},
+  "midiChannelDevices": {},
+  "virtualSwitches": {
+    "VirtSW1": {
+      "virtualSwitchNumber": 1,
+      "doublePressVarianceMs": 250
+    }
+  },
+  "name": "Auxidi Solo Mini QuadCortex",
+  "description": "A basic button that opens Gig View with a press, and closes gig view with a long press"
+}
