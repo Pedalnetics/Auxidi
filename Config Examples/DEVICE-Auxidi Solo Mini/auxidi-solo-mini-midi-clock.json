@@ -1,0 +1,156 @@
+{
+  "dateTimeGenerated": "2026-01-25T20:52:09.906Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 2
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25,
+    "statusLedColorFormat": "GRB",
+    "isSimpleMode": false
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "ledColorFormat": "GRB"
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {},
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "fc328d8f-ae46-4721-aa73-102cb0088230",
+                  "commandClass": "MIDI Clock Tap",
+                  "action": "press"
+                }
+              ],
+              "id": "939f7d43-71ef-4a5a-9fe4-a7a0f6cdd695",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                179,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "69ada644-520a-4d04-8068-33d4ff75ee9d",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change",
+                  "number": "2",
+                  "action": "release"
+                },
+                {
+                  "id": "cab0d2da-e2e8-4116-972b-0573960a4518",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "2",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "a16fca0f-9a06-428f-a1a8-c5c89b1a2c7d",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                0,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "VirtSW1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "5a2e50c0-26fe-42fd-bb39-852490ed70c1",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change",
+                  "number": "3",
+                  "action": "release"
+                },
+                {
+                  "id": "7df96005-de2c-49b8-9c11-019c86218ab1",
+                  "commandClass": "Control Change",
+                  "number": "3",
+                  "value": "0",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "acad135f-5b27-49ff-93be-18aac3b500a4",
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        0,
+        0
+      ],
+      "lightBrightness": 25
+    }
+  ],
+  "sequences": {},
+  "pcWalkerSequences": {},
+  "midiChannelDevices": {},
+  "name": "Auxidi Solo Mini MIDI Clock",
+  "description": "A switch ready to send MIDI Clock to your whole board"
+}
