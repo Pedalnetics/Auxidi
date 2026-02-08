@@ -1,0 +1,145 @@
+{
+  "dateTimeGenerated": "2026-02-08T02:23:38.461Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "disabled",
+    "sdaPin": 2,
+    "sclPin": 3,
+    "screenSizePx": [
+      128,
+      64
+    ],
+    "midiThru": false,
+    "statusScreenAddress": "",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 6
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25,
+    "isSimpleMode": false,
+    "statusLedColorFormat": "GRB"
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "ledColorFormat": "GRB"
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 2,
+      "screenAddress": "",
+      "expanderIO": null,
+      "expanderAddress": "",
+      "position": {
+        "row": 0,
+        "col": 1
+      },
+      "ledColorFormat": "GRB"
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {},
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "f6e39967-0e51-4643-80d0-c00461d4f8dd",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "95",
+                  "value": "127",
+                  "action": "press"
+                }
+              ],
+              "id": "a59284f0-fba8-4631-9ac3-f583535e0754",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                0,
+                0
+              ],
+              "lightBrightness": 18,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "d1b90664-eff2-4301-a8e0-44292210961e",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "94",
+                  "value": 127,
+                  "action": "press"
+                }
+              ],
+              "id": "9585d0aa-d7fc-4618-be15-515a9e75a005",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                42,
+                255
+              ],
+              "lightBrightness": 18,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "lightRGB": [
+        255,
+        255,
+        255
+      ],
+      "lightBrightness": 18
+    }
+  ],
+  "sequences": {},
+  "pcWalkerSequences": {},
+  "midiChannelDevices": {
+    "1": "TC Plethora X3"
+  },
+  "virtualSwitches": {
+    "VirtSW1": {
+      "switch1Id": "1",
+      "switch2Id": "2",
+      "name": "VirtSW 1+2",
+      "doublePressVarianceMs": 300
+    }
+  },
+  "name": "15259 - Karl K",
+  "description": "A base config for the TC Plethora X3"
+}
