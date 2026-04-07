@@ -1,0 +1,508 @@
+{
+  "dateTimeGenerated": "2026-04-02T01:00:29.626Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "i2c",
+    "sdaPin": 4,
+    "sclPin": 5,
+    "screenSizePx": [
+      128,
+      32
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "0x3c",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "0x70",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 5
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25,
+    "isSimpleMode": false,
+    "statusLedColorFormat": "RGB"
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "0x3c",
+      "expanderIO": 1,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "ledColorFormat": "GRB"
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 2,
+      "screenAddress": "0x3c",
+      "expanderIO": 2,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 1
+      },
+      "ledColorFormat": "GRB"
+    },
+    "3": {
+      "pinNumber": 8,
+      "ledNumber": 3,
+      "screenAddress": "0x3c",
+      "expanderIO": 3,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 2
+      },
+      "ledColorFormat": "GRB"
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {
+        "VirtSW1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "02463a6a-4410-4d70-b026-98c1a729ffff",
+                  "commandClass": "Previous Page",
+                  "action": "press"
+                }
+              ],
+              "id": "d8c32c60-b727-4e7e-bd05-96e3b2960ad0"
+            }
+          }
+        },
+        "VirtSW2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "91f31eaf-3602-40f0-bfe1-7c7e9a497478",
+                  "commandClass": "Next Page",
+                  "action": "press"
+                }
+              ],
+              "id": "3e731cf9-5efb-4483-b78a-fc17e337cd19"
+            }
+          }
+        }
+      },
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "70207949-df03-400f-bcd5-f40ca2fb26fb",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "106",
+                  "value": "1",
+                  "action": "press"
+                },
+                {
+                  "id": "6ba0a343-6fa8-4546-bcaf-f749e8f987d7",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "106",
+                  "value": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "0426c8bf-0a8b-4e87-8d0f-6a1239825ef8",
+              "useScreenText": true,
+              "screenText": "Preset Down",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                0,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "390f424e-1663-416a-b562-be6447a5fc63",
+                  "commandClass": "Sequence - Next Step",
+                  "number": "1",
+                  "value": 127,
+                  "action": "press"
+                }
+              ],
+              "id": "14aae000-7fc6-42ff-bec5-4bef55e599db",
+              "useScreenText": true,
+              "screenText": "Mode",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                110,
+                255
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "fb05e4c6-ee81-4b5c-8c21-1278cfc0c5a4",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "105",
+                  "value": "1",
+                  "action": "press"
+                },
+                {
+                  "id": "c2a9b31d-6038-4e44-9102-e8e021c3b447",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "105",
+                  "value": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "action": "longPress"
+                }
+              ],
+              "id": "3e373491-5b7a-4207-9ed8-f5dfd89a39e2",
+              "useScreenText": true,
+              "screenText": "Preset Up",
+              "useLightControls": true,
+              "lightRGB": [
+                17,
+                255,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "name": "Page1",
+      "statusText": "Page1",
+      "lightRGB": [
+        255,
+        255,
+        255
+      ],
+      "lightBrightness": 5
+    },
+    {
+      "pageNumber": 2,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "211d6a67-96a8-4e17-95f6-0a28e578747c",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "86",
+                  "value": "1",
+                  "action": "press",
+                  "notes": "Tuner"
+                }
+              ],
+              "id": "21dde4e1-fc21-4d05-ae2c-457842304ae3",
+              "useScreenText": true,
+              "screenText": "Tuner",
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "c6871663-f85f-49dc-8311-e302cd1d52dd",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "109",
+                  "value": "1",
+                  "action": "press",
+                  "notes": "Previous Scene"
+                }
+              ],
+              "id": "bd7564ea-767d-4eab-9f12-4bf3c2382a88",
+              "useScreenText": true,
+              "screenText": "Prev Scene",
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "f0a625d7-3164-4fa1-99d5-711bc503d733",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "108",
+                  "value": "1",
+                  "action": "press",
+                  "notes": "Next scene"
+                }
+              ],
+              "id": "e5543507-9ff6-4045-b8b7-92213922ca6a",
+              "useScreenText": true,
+              "screenText": "Next Scene",
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "statusText": "Page 2",
+      "lightRGB": [
+        212,
+        255,
+        0
+      ],
+      "lightBrightness": 5
+    },
+    {
+      "pageNumber": 3,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "6d83ad6a-5958-4316-9bab-8ca69ee608a1",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "107",
+                  "value": "1",
+                  "action": "press",
+                  "notes": "Scene A"
+                }
+              ],
+              "id": "c83a3ab9-ebc5-42f4-8e5f-e9e07a8af32b",
+              "useScreenText": true,
+              "screenText": "A",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": 1,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "befde2e2-b258-4b79-9252-83d8e7eeb63d",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "107",
+                  "value": "2",
+                  "action": "press",
+                  "notes": "Scene B"
+                }
+              ],
+              "id": "0db3d844-62ff-4ce8-9871-ff8f5f426d48",
+              "useScreenText": true,
+              "screenText": "B",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": 1,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "c6e8d12e-9d39-4bb3-a5c4-e250742f5078",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "107",
+                  "value": "3",
+                  "action": "press",
+                  "notes": "Scene C"
+                }
+              ],
+              "id": "18867e20-0a4f-4d77-8db1-10e6b539b653",
+              "useScreenText": true,
+              "screenText": "C",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                255,
+                255
+              ],
+              "lightBrightness": 25,
+              "ledGroup": 1,
+              "executeGlobalCommands": false
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "name": "Scenes",
+      "statusText": "Scenes"
+    }
+  ],
+  "sequences": {
+    "1": {
+      "name": "Mode Select",
+      "steps": [
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "85",
+              "value": "1",
+              "rampRateMs": 1000,
+              "id": "c8b1e8e5-31a7-4b79-a39c-167fe6c7e8da",
+              "notes": "Preset Mode",
+              "useScreenText": true,
+              "screenText": "Preset Mode",
+              "useLightControls": false,
+              "useRepeater": false
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "id": "c55c9694-28be-45a9-8577-fde8801b6100"
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "85",
+              "value": "2",
+              "rampRateMs": 1000,
+              "id": "cc53db2f-83fe-401e-99c0-898eb5568ffa",
+              "notes": "Stomp Mode",
+              "useScreenText": true,
+              "screenText": "Stomp Mode",
+              "useLightControls": false,
+              "useRepeater": false
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "id": "c308bce9-cd25-40dc-9521-cd5fb98f4a94"
+        },
+        {
+          "commands": [
+            {
+              "midiChannel": 1,
+              "commandClass": "Control Change",
+              "number": "85",
+              "value": "3",
+              "rampRateMs": 1000,
+              "id": "f473abb4-3f9a-4265-9401-c2e6c4254eeb",
+              "notes": "Scene Mode",
+              "useScreenText": true,
+              "screenText": "Scene Mode",
+              "useLightControls": false,
+              "useRepeater": false
+            }
+          ],
+          "screenText": "",
+          "useScreenText": false,
+          "useLightControls": false,
+          "lightRGB": [
+            255,
+            255,
+            255
+          ],
+          "lightBrightness": 50,
+          "ledGroup": null,
+          "id": "db1a454b-1307-4c97-b726-9eccb3aa4689"
+        }
+      ]
+    }
+  },
+  "pcWalkerSequences": {},
+  "midiChannelDevices": {
+    "1": "Anagram"
+  },
+  "virtualSwitches": {
+    "VirtSW1": {
+      "switch1Id": "1",
+      "switch2Id": "2",
+      "name": "VirtSW12",
+      "doublePressVarianceMs": 250
+    },
+    "VirtSW2": {
+      "switch1Id": "2",
+      "switch2Id": "3",
+      "name": "VirtSW23",
+      "doublePressVarianceMs": 250
+    }
+  },
+  "name": "Audixi Trio Plus - Anagram",
+  "description": "A baseline Auxidi Trio Plus config for your Anagram"
+}
