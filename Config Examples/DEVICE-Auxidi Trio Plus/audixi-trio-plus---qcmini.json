@@ -1,0 +1,764 @@
+{
+  "dateTimeGenerated": "2026-05-22T16:52:13.867Z",
+  "settings": {
+    "midiChannel": 1,
+    "longPressTimeMS": 500,
+    "screenMode": "i2c",
+    "sdaPin": 4,
+    "sclPin": 5,
+    "screenSizePx": [
+      128,
+      32
+    ],
+    "midiThru": true,
+    "statusScreenAddress": "0x3c",
+    "statusScreenExpanderIO": 0,
+    "statusScreenExpanderAddress": "0x70",
+    "statusLedNumber": 0,
+    "ledType": "pixel",
+    "pixelPin": 19,
+    "midiInputPin": 1,
+    "midiOutputPin": 0,
+    "gridConfig": {
+      "rows": 1,
+      "cols": 5
+    },
+    "lockCoreConfig": false,
+    "serialDebug": false,
+    "screenLedBehavior": "postloadwithpreview",
+    "previewLedBrightness": 25,
+    "isSimpleMode": false,
+    "statusLedColorFormat": "RGB"
+  },
+  "switches": {
+    "1": {
+      "pinNumber": 6,
+      "ledNumber": 1,
+      "screenAddress": "0x3c",
+      "expanderIO": 1,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "ledColorFormat": "GRB"
+    },
+    "2": {
+      "pinNumber": 7,
+      "ledNumber": 2,
+      "screenAddress": "0x3c",
+      "expanderIO": 2,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 1
+      },
+      "ledColorFormat": "GRB"
+    },
+    "3": {
+      "pinNumber": 8,
+      "ledNumber": 3,
+      "screenAddress": "0x3c",
+      "expanderIO": 3,
+      "expanderAddress": "0x70",
+      "position": {
+        "row": 0,
+        "col": 2
+      },
+      "ledColorFormat": "GRB"
+    }
+  },
+  "pages": [
+    {
+      "pageNumber": 0,
+      "switches": {},
+      "isGlobal": true
+    },
+    {
+      "pageNumber": 1,
+      "switches": {
+        "1": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "70207949-df03-400f-bcd5-f40ca2fb26fb",
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "walkerDirection": "Previous",
+                  "activatePreset": true,
+                  "action": "press"
+                },
+                {
+                  "id": "69da4d78-96fa-432f-9d51-4e5e3891640b",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "walkerDirection": "Previous",
+                  "activatePreset": true,
+                  "action": "longPress"
+                }
+              ],
+              "id": "d59f2708-22e3-4dce-8f98-f4461fae2dfd",
+              "useScreenText": true,
+              "screenText": "Bank Down",
+              "useLightControls": true,
+              "lightRGB": [
+                255,
+                0,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "2": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "390f424e-1663-416a-b562-be6447a5fc63",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "walkerDirection": "Next",
+                  "activatePreset": true,
+                  "action": "press"
+                },
+                {
+                  "id": "6e0dab74-17c8-4b12-9da0-9b7c794c949d",
+                  "midiChannel": 1,
+                  "commandClass": "Program Change Walker",
+                  "number": "1",
+                  "useRepeater": true,
+                  "repeaterStartDelayMs": 1000,
+                  "repeaterIntervalMs": 500,
+                  "walkerDirection": "Next",
+                  "activatePreset": true,
+                  "action": "longPress"
+                }
+              ],
+              "id": "c3ceb22b-ec3e-4d70-a4b4-f82a86bd1ec8",
+              "useScreenText": true,
+              "screenText": "Bank Up",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                110,
+                255
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            }
+          }
+        },
+        "3": {
+          "Steps": {
+            "1": {
+              "commands": [
+                {
+                  "id": "fb05e4c6-ee81-4b5c-8c21-1278cfc0c5a4",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "64",
+                  "value": "127",
+                  "action": "press",
+                  "notes": "Page2"
+                }
+              ],
+              "id": "55e47bc2-7218-4e80-8db8-d0aefa2ff507",
+              "useScreenText": true,
+              "screenText": "FS Bank",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                255,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null,
+              "executeGlobalCommands": false
+            },
+            "2": {
+              "commands": [
+                {
+                  "id": "3cd62daa-ba4d-40a5-9b81-e65c87ef90ed",
+                  "midiChannel": 1,
+                  "commandClass": "Control Change",
+                  "number": "64",
+                  "value": "0",
+                  "action": "press",
+                  "notes": "Page1"
+                }
+              ],
+              "id": "19025a66-c264-41fe-8f39-22570e5479cf",
+              "useScreenText": true,
+              "screenText": "FS Bank",
+              "useLightControls": true,
+              "lightRGB": [
+                0,
+                255,
+                0
+              ],
+              "lightBrightness": 10,
+              "ledGroup": null
+            }
+          }
+        }
+      },
+      "isGlobal": false,
+      "statusText": "Page1",
+      "lightRGB": [
+        255,
+        255,
+        255
+      ],
+      "lightBrightness": 5
+    }
+  ],
+  "sequences": {},
+  "pcWalkerSequences": {
+    "1": {
+      "name": "PC Walker 1",
+      "entries": [
+        {
+          "pcNumber": 0,
+          "pcText": "PC0"
+        },
+        {
+          "pcNumber": 1,
+          "pcText": "PC1"
+        },
+        {
+          "pcNumber": 2,
+          "pcText": "PC2"
+        },
+        {
+          "pcNumber": 3,
+          "pcText": "PC3"
+        },
+        {
+          "pcNumber": 4,
+          "pcText": "PC4"
+        },
+        {
+          "pcNumber": 5,
+          "pcText": "PC5"
+        },
+        {
+          "pcNumber": 6,
+          "pcText": "PC6"
+        },
+        {
+          "pcNumber": 7,
+          "pcText": "PC7"
+        },
+        {
+          "pcNumber": 8,
+          "pcText": "PC8"
+        },
+        {
+          "pcNumber": 9,
+          "pcText": "PC9"
+        },
+        {
+          "pcNumber": 10,
+          "pcText": "PC10"
+        },
+        {
+          "pcNumber": 11,
+          "pcText": "PC11"
+        },
+        {
+          "pcNumber": 12,
+          "pcText": "PC12"
+        },
+        {
+          "pcNumber": 13,
+          "pcText": "PC13"
+        },
+        {
+          "pcNumber": 14,
+          "pcText": "PC14"
+        },
+        {
+          "pcNumber": 15,
+          "pcText": "PC15"
+        },
+        {
+          "pcNumber": 16,
+          "pcText": "PC16"
+        },
+        {
+          "pcNumber": 17,
+          "pcText": "PC17"
+        },
+        {
+          "pcNumber": 18,
+          "pcText": "PC18"
+        },
+        {
+          "pcNumber": 19,
+          "pcText": "PC19"
+        },
+        {
+          "pcNumber": 20,
+          "pcText": "PC20"
+        },
+        {
+          "pcNumber": 21,
+          "pcText": "PC21"
+        },
+        {
+          "pcNumber": 22,
+          "pcText": "PC22"
+        },
+        {
+          "pcNumber": 23,
+          "pcText": "PC23"
+        },
+        {
+          "pcNumber": 24,
+          "pcText": "PC24"
+        },
+        {
+          "pcNumber": 25,
+          "pcText": "PC25"
+        },
+        {
+          "pcNumber": 26,
+          "pcText": "PC26"
+        },
+        {
+          "pcNumber": 27,
+          "pcText": "PC27"
+        },
+        {
+          "pcNumber": 28,
+          "pcText": "PC28"
+        },
+        {
+          "pcNumber": 29,
+          "pcText": "PC29"
+        },
+        {
+          "pcNumber": 30,
+          "pcText": "PC30"
+        },
+        {
+          "pcNumber": 31,
+          "pcText": "PC31"
+        },
+        {
+          "pcNumber": 32,
+          "pcText": "PC32"
+        },
+        {
+          "pcNumber": 33,
+          "pcText": "PC33"
+        },
+        {
+          "pcNumber": 34,
+          "pcText": "PC34"
+        },
+        {
+          "pcNumber": 35,
+          "pcText": "PC35"
+        },
+        {
+          "pcNumber": 36,
+          "pcText": "PC36"
+        },
+        {
+          "pcNumber": 37,
+          "pcText": "PC37"
+        },
+        {
+          "pcNumber": 38,
+          "pcText": "PC38"
+        },
+        {
+          "pcNumber": 39,
+          "pcText": "PC39"
+        },
+        {
+          "pcNumber": 40,
+          "pcText": "PC40"
+        },
+        {
+          "pcNumber": 41,
+          "pcText": "PC41"
+        },
+        {
+          "pcNumber": 42,
+          "pcText": "PC42"
+        },
+        {
+          "pcNumber": 43,
+          "pcText": "PC43"
+        },
+        {
+          "pcNumber": 44,
+          "pcText": "PC44"
+        },
+        {
+          "pcNumber": 45,
+          "pcText": "PC45"
+        },
+        {
+          "pcNumber": 46,
+          "pcText": "PC46"
+        },
+        {
+          "pcNumber": 47,
+          "pcText": "PC47"
+        },
+        {
+          "pcNumber": 48,
+          "pcText": "PC48"
+        },
+        {
+          "pcNumber": 49,
+          "pcText": "PC49"
+        },
+        {
+          "pcNumber": 50,
+          "pcText": "PC50"
+        },
+        {
+          "pcNumber": 51,
+          "pcText": "PC51"
+        },
+        {
+          "pcNumber": 52,
+          "pcText": "PC52"
+        },
+        {
+          "pcNumber": 53,
+          "pcText": "PC53"
+        },
+        {
+          "pcNumber": 54,
+          "pcText": "PC54"
+        },
+        {
+          "pcNumber": 55,
+          "pcText": "PC55"
+        },
+        {
+          "pcNumber": 56,
+          "pcText": "PC56"
+        },
+        {
+          "pcNumber": 57,
+          "pcText": "PC57"
+        },
+        {
+          "pcNumber": 58,
+          "pcText": "PC58"
+        },
+        {
+          "pcNumber": 59,
+          "pcText": "PC59"
+        },
+        {
+          "pcNumber": 60,
+          "pcText": "PC60"
+        },
+        {
+          "pcNumber": 61,
+          "pcText": "PC61"
+        },
+        {
+          "pcNumber": 62,
+          "pcText": "PC62"
+        },
+        {
+          "pcNumber": 63,
+          "pcText": "PC63"
+        },
+        {
+          "pcNumber": 64,
+          "pcText": "PC64"
+        },
+        {
+          "pcNumber": 65,
+          "pcText": "PC65"
+        },
+        {
+          "pcNumber": 66,
+          "pcText": "PC66"
+        },
+        {
+          "pcNumber": 67,
+          "pcText": "PC67"
+        },
+        {
+          "pcNumber": 68,
+          "pcText": "PC68"
+        },
+        {
+          "pcNumber": 69,
+          "pcText": "PC69"
+        },
+        {
+          "pcNumber": 70,
+          "pcText": "PC70"
+        },
+        {
+          "pcNumber": 71,
+          "pcText": "PC71"
+        },
+        {
+          "pcNumber": 72,
+          "pcText": "PC72"
+        },
+        {
+          "pcNumber": 73,
+          "pcText": "PC73"
+        },
+        {
+          "pcNumber": 74,
+          "pcText": "PC74"
+        },
+        {
+          "pcNumber": 75,
+          "pcText": "PC75"
+        },
+        {
+          "pcNumber": 76,
+          "pcText": "PC76"
+        },
+        {
+          "pcNumber": 77,
+          "pcText": "PC77"
+        },
+        {
+          "pcNumber": 78,
+          "pcText": "PC78"
+        },
+        {
+          "pcNumber": 79,
+          "pcText": "PC79"
+        },
+        {
+          "pcNumber": 80,
+          "pcText": "PC80"
+        },
+        {
+          "pcNumber": 81,
+          "pcText": "PC81"
+        },
+        {
+          "pcNumber": 82,
+          "pcText": "PC82"
+        },
+        {
+          "pcNumber": 83,
+          "pcText": "PC83"
+        },
+        {
+          "pcNumber": 84,
+          "pcText": "PC84"
+        },
+        {
+          "pcNumber": 85,
+          "pcText": "PC85"
+        },
+        {
+          "pcNumber": 86,
+          "pcText": "PC86"
+        },
+        {
+          "pcNumber": 87,
+          "pcText": "PC87"
+        },
+        {
+          "pcNumber": 88,
+          "pcText": "PC88"
+        },
+        {
+          "pcNumber": 89,
+          "pcText": "PC89"
+        },
+        {
+          "pcNumber": 90,
+          "pcText": "PC90"
+        },
+        {
+          "pcNumber": 91,
+          "pcText": "PC91"
+        },
+        {
+          "pcNumber": 92,
+          "pcText": "PC92"
+        },
+        {
+          "pcNumber": 93,
+          "pcText": "PC93"
+        },
+        {
+          "pcNumber": 94,
+          "pcText": "PC94"
+        },
+        {
+          "pcNumber": 95,
+          "pcText": "PC95"
+        },
+        {
+          "pcNumber": 96,
+          "pcText": "PC96"
+        },
+        {
+          "pcNumber": 97,
+          "pcText": "PC97"
+        },
+        {
+          "pcNumber": 98,
+          "pcText": "PC98"
+        },
+        {
+          "pcNumber": 99,
+          "pcText": "PC99"
+        },
+        {
+          "pcNumber": 100,
+          "pcText": "PC100"
+        },
+        {
+          "pcNumber": 101,
+          "pcText": "PC101"
+        },
+        {
+          "pcNumber": 102,
+          "pcText": "PC102"
+        },
+        {
+          "pcNumber": 103,
+          "pcText": "PC103"
+        },
+        {
+          "pcNumber": 104,
+          "pcText": "PC104"
+        },
+        {
+          "pcNumber": 105,
+          "pcText": "PC105"
+        },
+        {
+          "pcNumber": 106,
+          "pcText": "PC106"
+        },
+        {
+          "pcNumber": 107,
+          "pcText": "PC107"
+        },
+        {
+          "pcNumber": 108,
+          "pcText": "PC108"
+        },
+        {
+          "pcNumber": 109,
+          "pcText": "PC109"
+        },
+        {
+          "pcNumber": 110,
+          "pcText": "PC110"
+        },
+        {
+          "pcNumber": 111,
+          "pcText": "PC111"
+        },
+        {
+          "pcNumber": 112,
+          "pcText": "PC112"
+        },
+        {
+          "pcNumber": 113,
+          "pcText": "PC113"
+        },
+        {
+          "pcNumber": 114,
+          "pcText": "PC114"
+        },
+        {
+          "pcNumber": 115,
+          "pcText": "PC115"
+        },
+        {
+          "pcNumber": 116,
+          "pcText": "PC116"
+        },
+        {
+          "pcNumber": 117,
+          "pcText": "PC117"
+        },
+        {
+          "pcNumber": 118,
+          "pcText": "PC118"
+        },
+        {
+          "pcNumber": 119,
+          "pcText": "PC119"
+        },
+        {
+          "pcNumber": 120,
+          "pcText": "PC120"
+        },
+        {
+          "pcNumber": 121,
+          "pcText": "PC121"
+        },
+        {
+          "pcNumber": 122,
+          "pcText": "PC122"
+        },
+        {
+          "pcNumber": 123,
+          "pcText": "PC123"
+        },
+        {
+          "pcNumber": 124,
+          "pcText": "PC124"
+        },
+        {
+          "pcNumber": 125,
+          "pcText": "PC125"
+        },
+        {
+          "pcNumber": 126,
+          "pcText": "PC126"
+        },
+        {
+          "pcNumber": 127,
+          "pcText": "PC127"
+        }
+      ]
+    }
+  },
+  "midiChannelDevices": {
+    "1": "QC Mini"
+  },
+  "virtualSwitches": {
+    "VirtSW1": {
+      "switch1Id": "1",
+      "switch2Id": "2",
+      "name": "VirtSW12",
+      "doublePressVarianceMs": 250
+    },
+    "VirtSW2": {
+      "switch1Id": "2",
+      "switch2Id": "3",
+      "name": "VirtSW23",
+      "doublePressVarianceMs": 250
+    }
+  },
+  "name": "Audixi Trio Plus - QCMini",
+  "description": "QC Mini baseline configuration"
+}
