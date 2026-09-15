@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2026-09-15T16:03:39.846Z",
+  "dateTimeGenerated": "2026-09-15T16:04:42.064Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -83,7 +83,7 @@
                   "action": "press"
                 }
               ],
-              "id": "60414781-b0a9-4313-a930-a6dda77dc129",
+              "id": "aee910e6-c5e9-470d-9ef4-410090315ca3",
               "useLightControls": true,
               "lightRGB": [
                 0,
@@ -108,7 +108,7 @@
                   "action": "press"
                 }
               ],
-              "id": "a5dc7783-463f-467b-9a31-4395ce7ca949",
+              "id": "83765527-06ae-4e37-9127-6ba3fdcfc142",
               "useLightControls": true,
               "lightRGB": [
                 200,
@@ -133,7 +133,7 @@
                   "action": "press"
                 }
               ],
-              "id": "e9e3e254-3122-4940-922b-52ba00fc6361",
+              "id": "0baf6854-ddd5-4cf8-adbd-5a03b9e73de6",
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -158,7 +158,7 @@
                   "action": "press"
                 }
               ],
-              "id": "09f3ff05-d2dc-4e3a-a465-94921cd4a862",
+              "id": "c977a7c3-0494-4932-83ed-7a5860bfb59d",
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -183,11 +183,7 @@
   ],
   "sequences": {},
   "pcSequencerSequences": {},
-  "midiChannelDevices": {
-    "1": "Quad Cortex",
-    "2": "HXOne",
-    "3": "Cloudburst"
-  },
+  "midiChannelDevices": {},
   "midiInputMappings": [],
   "ledColorPresets": [],
   "name": "Auxidi Converter 2+",
