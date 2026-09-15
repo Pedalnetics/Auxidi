@@ -1,5 +1,5 @@
 {
-  "dateTimeGenerated": "2026-09-15T15:59:36.547Z",
+  "dateTimeGenerated": "2026-09-15T16:02:42.653Z",
   "settings": {
     "midiChannel": 1,
     "longPressTimeMS": 500,
@@ -71,56 +71,6 @@
     {
       "pageNumber": 1,
       "switches": {
-        "1": {
-          "Steps": {
-            "1": {
-              "commands": [
-                {
-                  "id": "8e0fa45a-80c7-439c-97af-7e75656ead87",
-                  "midiChannel": 1,
-                  "commandClass": "Program Change",
-                  "number": "1",
-                  "action": "press"
-                }
-              ],
-              "id": "f2ca58a0-3417-4350-b0f0-2278b0fdaccb",
-              "useLightControls": true,
-              "lightRGB": [
-                200,
-                0,
-                255
-              ],
-              "lightBrightness": 10,
-              "ledGroup": null,
-              "executeGlobalCommands": false
-            }
-          }
-        },
-        "2": {
-          "Steps": {
-            "1": {
-              "commands": [
-                {
-                  "id": "4550f2a7-a3ea-4e96-8fe7-506174f4f907",
-                  "midiChannel": 1,
-                  "commandClass": "Program Change",
-                  "number": "2",
-                  "action": "press"
-                }
-              ],
-              "id": "37da72c0-e4cf-4e6f-a8e7-37c19c94bd0c",
-              "useLightControls": true,
-              "lightRGB": [
-                0,
-                157,
-                255
-              ],
-              "lightBrightness": 10,
-              "ledGroup": null,
-              "executeGlobalCommands": false
-            }
-          }
-        },
         "3": {
           "Steps": {
             "1": {
@@ -133,7 +83,7 @@
                   "action": "press"
                 }
               ],
-              "id": "919bb80d-cb01-49ac-b2f7-17f2ec6af1d4",
+              "id": "aee910e6-c5e9-470d-9ef4-410090315ca3",
               "useLightControls": true,
               "lightRGB": [
                 0,
@@ -158,7 +108,7 @@
                   "action": "press"
                 }
               ],
-              "id": "ca8e6eb3-edb2-437d-b49c-0b930f9b6d28",
+              "id": "83765527-06ae-4e37-9127-6ba3fdcfc142",
               "useLightControls": true,
               "lightRGB": [
                 200,
@@ -183,7 +133,7 @@
                   "action": "press"
                 }
               ],
-              "id": "79948215-b082-4649-acc7-ded7050bb2f6",
+              "id": "0baf6854-ddd5-4cf8-adbd-5a03b9e73de6",
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -208,7 +158,7 @@
                   "action": "press"
                 }
               ],
-              "id": "96ca98e6-4409-40e1-83ae-7a09e845d6c2",
+              "id": "c977a7c3-0494-4932-83ed-7a5860bfb59d",
               "useLightControls": true,
               "lightRGB": [
                 255,
@@ -231,244 +181,7 @@
       "lightBrightness": 18
     }
   ],
-  "sequences": {
-    "1": {
-      "name": "Cloudburst Freeze",
-      "steps": [
-        {
-          "commands": [
-            {
-              "midiChannel": 3,
-              "commandClass": "Control Change",
-              "number": "97",
-              "value": "127",
-              "rampRateMs": 1000,
-              "id": "3a09457d-436d-4738-ad66-43fad38e0fef",
-              "notes": "CB Freeze Activate",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "4bcca9b5-df68-4ea9-8e90-53196e3129a6"
-        },
-        {
-          "commands": [
-            {
-              "midiChannel": 3,
-              "commandClass": "Control Change",
-              "number": "97",
-              "value": "0",
-              "rampRateMs": 1000,
-              "id": "8382cf53-52d7-4331-aa7b-9beaad5ceefa",
-              "notes": "CB Freeze Release",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "fdedd36c-8a07-4b7e-801c-74f34fbd985a"
-        }
-      ]
-    },
-    "2": {
-      "name": "QC Tuner",
-      "steps": [
-        {
-          "commands": [
-            {
-              "midiChannel": 1,
-              "commandClass": "Control Change",
-              "number": "45",
-              "value": "64",
-              "rampRateMs": 1000,
-              "id": "5dc182f0-d92f-4f60-bba4-d98d9a10e830",
-              "notes": "QC Tuner On",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "4edcea4e-017d-4f41-b3f5-e26e0d8d52ae"
-        },
-        {
-          "commands": [
-            {
-              "midiChannel": 1,
-              "commandClass": "Control Change",
-              "number": "45",
-              "value": "0",
-              "rampRateMs": 1000,
-              "id": "7ac46e12-04c5-4660-9f3f-c8f6c9b5495e",
-              "notes": "QC Tuner Off",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "32ea3657-5681-4d2d-9ec6-3364fa42d037"
-        }
-      ]
-    },
-    "3": {
-      "name": "QC GigView",
-      "steps": [
-        {
-          "commands": [
-            {
-              "midiChannel": 1,
-              "commandClass": "Control Change",
-              "number": "46",
-              "value": "64",
-              "rampRateMs": 1000,
-              "id": "79d63383-7657-4cb1-929c-2e4c5267c0a1",
-              "notes": "QC GigView Show",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "99cc7db7-ebac-452a-8a9b-df40be5f670a"
-        },
-        {
-          "commands": [
-            {
-              "midiChannel": 1,
-              "commandClass": "Control Change",
-              "number": "46",
-              "value": "0",
-              "rampRateMs": 1000,
-              "id": "aa939584-6ff4-40c9-9480-c01e97e53196",
-              "notes": "QC GigView Close",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "60525df2-35f3-4a53-b0b8-7226b409ea03"
-        }
-      ]
-    },
-    "4": {
-      "name": "Cloudburst OnOff",
-      "steps": [
-        {
-          "commands": [
-            {
-              "midiChannel": 3,
-              "commandClass": "Control Change",
-              "number": "102",
-              "value": "0",
-              "rampRateMs": 1000,
-              "id": "e4700a7e-fe6f-47a9-8a6e-1e9b97aa9daf",
-              "notes": "CB Bypass",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "c7feff0f-3bf9-4819-85c7-81c47c8986f7"
-        },
-        {
-          "commands": [
-            {
-              "midiChannel": 3,
-              "commandClass": "Control Change",
-              "number": "102",
-              "value": "127",
-              "rampRateMs": 1000,
-              "id": "a154685f-0859-4a70-8dbb-b501c3016d8f",
-              "notes": "CB Engage",
-              "useLightControls": false,
-              "useScreenText": false,
-              "useRepeater": false
-            }
-          ],
-          "screenText": "",
-          "useScreenText": false,
-          "useLightControls": false,
-          "lightRGB": [
-            255,
-            255,
-            255
-          ],
-          "lightBrightness": 50,
-          "ledGroup": null,
-          "id": "8e2206e4-143e-4d25-829f-14f272177eb2"
-        }
-      ]
-    }
-  },
+  "sequences": {},
   "pcSequencerSequences": {
     "1": {
       "name": "HXOne Presets",
